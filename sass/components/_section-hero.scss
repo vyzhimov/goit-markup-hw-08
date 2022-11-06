@@ -1,0 +1,38 @@
+.section-hero {
+  padding: 118px 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $background-hero-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: $hero-bg-gradient, url(../images/hero/hero-bg-mobile.jpg);
+  text-align: center;
+
+  @include retina {
+    background-image: $hero-bg-gradient,
+      url(../images/hero/hero-bg-mobile-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: $hero-bg-gradient, url(../images/hero/hero-bg-tablet.jpg);
+    text-align: center;
+
+    @include retina {
+      background-image: $hero-bg-gradient,
+        url(../images/hero/hero-bg-tablet-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    padding: 200px 0;
+    max-width: 1600px;
+    background-image: $hero-bg-gradient, url(../images/hero/hero-bg-desktop.jpg);
+    text-align: center;
+
+    @include retina {
+      background-image: $hero-bg-gradient,
+        url(../images/hero/hero-bg-desktop-2x.jpg);
+    }
+  }
+}

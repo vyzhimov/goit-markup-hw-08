@@ -1,0 +1,77 @@
+.form-subscribe {
+  display: flex;
+  width: 100%;
+
+  @media screen and (max-width: 1199px) {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form-subscribe__field {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  @media screen and (max-width: 1199px) {
+    &:focus-within > .form-subscribe__label,
+    .form-subscribe__input:not(:placeholder-shown) + .form-subscribe__label {
+      color: transparent;
+    }
+  }
+
+  @include desktop {
+    justify-content: space-between;
+
+    &:focus-within > .form-subscribe__label,
+    .form-subscribe__input:not(:placeholder-shown) + .form-subscribe__label {
+      transform: translate(-70px, -50%);
+    }
+  }
+}
+
+.form-subscribe__input {
+  width: 450px;
+  height: 50px;
+  padding: 15px 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $white-text-color;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &:focus {
+    outline: 1px solid $accent-color;
+    border-color: transparent;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.form-subscribe__label {
+  position: absolute;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $footer-text-color;
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform $transition-duration $transition-timing;
+
+  @include desktop {
+    left: 16px;
+    transform: translateY(-50%);
+  }
+}
+
+.form-subscribe__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}

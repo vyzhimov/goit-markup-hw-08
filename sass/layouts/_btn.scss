@@ -1,0 +1,34 @@
+.btn {
+  font-family: inherit;
+  min-width: 200px;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: $white-text-color;
+  background-color: $accent-color;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color $transition-duration $transition-timing;
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+.btn--large {
+  min-width: 216px;
+}
+
+.form-subscribe__btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+
+  @include desktop {
+    margin-left: 12px;
+  }
+}

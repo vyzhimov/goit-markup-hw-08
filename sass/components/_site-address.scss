@@ -1,0 +1,26 @@
+.site-address {
+  font-style: normal;
+}
+
+.site-address__item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.site-address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-text-color;
+  transition: color $transition-duration $transition-timing;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-address__link--darkened {
+  color: $footer-text-color;
+}

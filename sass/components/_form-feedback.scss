@@ -1,0 +1,105 @@
+.form-feedback {
+  margin-top: 30px;
+}
+
+.form-feedback__field {
+  position: relative;
+  display: block;
+  margin-bottom: 28px;
+
+  &:focus-within > .form-feedback__icon {
+    fill: $accent-color;
+  }
+
+  &:focus-within .form-feedback__input {
+    outline: 1px solid transparent;
+    border-color: $accent-color;
+  }
+
+  &:focus-within > .form-feedback__label,
+  .form-feedback__input:not(:placeholder-shown) + .form-feedback__label {
+    transform: translate(-40px, -40px);
+  }
+}
+
+.form-feedback__input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 11px 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color $transition-duration $transition-timing;
+}
+
+.form-feedback__label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $second-color;
+  transition: transform $transition-duration $transition-timing;
+}
+
+.form-feedback__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: $main-color;
+  transition: color $transition-duration $transition-timing;
+}
+
+.form-feedback__message {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+
+  &:focus-within .form-feedback__comment {
+    transform: translate(-15px, -30px);
+  }
+
+  &:focus-within ::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus-within > .form-feedback__textarea {
+    outline: 1px solid transparent;
+    border-color: $accent-color;
+  }
+}
+
+.form-feedback__textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color $transition-duration $transition-timing;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: transparent;
+  }
+
+  &:not(:placeholder-shown) + .form-feedback__comment {
+    transform: translate(-15px, -30px);
+  }
+}
+
+.form-feedback__comment {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $second-color;
+  transition: transform $transition-duration $transition-timing;
+}

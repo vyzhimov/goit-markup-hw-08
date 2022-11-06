@@ -1,0 +1,27 @@
+.page-header {
+  border-bottom: 1px solid $header-border-color;
+  margin-bottom: -1px;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.btn-mobile {
+  margin-left: auto;
+  display: block;
+  padding: 0;
+  border: none;
+  color: $main-color;
+  background-color: transparent;
+}
+
+.btn-mobile__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,43 @@
+.site-contacts {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+
+  @include desktop {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.site-contacts__link {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: $main-line-height;
+  letter-spacing: 0.02em;
+  color: $second-color;
+  transition: color $transition-duration $transition-timing;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: currentColor;
+  }
+
+  @include desktop {
+    padding: 32px 0;
+  }
+}
+
+.site-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.page-header__site-contacts {
+  margin-left: auto;
+}

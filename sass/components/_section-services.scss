@@ -1,0 +1,51 @@
+.section-services {
+  padding-top: 47px;
+  padding-bottom: $section-padding;
+
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.services__list {
+  display: flex;
+  gap: 30px;
+}
+
+.services__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.services__thumb {
+  position: relative;
+}
+
+.services__img {
+  display: block;
+  width: 100%;
+}
+
+.services__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text-color;
+  background: $background-services-color;
+}
