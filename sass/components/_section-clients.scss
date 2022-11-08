@@ -1,6 +1,6 @@
 .section-clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: $mobile-section-padding;
+  padding-bottom: $mobile-section-padding;
 
   @include desktop {
     padding-top: $section-padding;

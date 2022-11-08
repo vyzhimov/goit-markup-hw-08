@@ -27,9 +27,10 @@
           <a class="logo page-header__logo" href="./index.html"
             >Web<span class="logo__text--black">Studio</span></a
           >
+
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студія</a>
+              <a class="site-nav__link" href="index.html">Студія</a>
             </li>
             <li class="site-nav__item">
               <a
@@ -61,6 +62,71 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="btn-mobile">
+          <svg class="btn-mobile__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#btn-mobile"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu mobile-menu--is-hidden">
+          <div class="container mobile-menu__container">
+            <button type="button" class="mobile-btn-close">
+              <svg class="mobile-btn-close__icon" width="19" height="19">
+                <use href="./images/icons/icons.svg#close-btn"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-nav">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="index.html">Студія</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a
+                  class="mobile-nav__link mobile-nav__link--current"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#">Контакти</a>
+              </li>
+            </ul>
+
+            <div class="mobile-menu__bottom">
+              <ul class="mobile-contacts">
+                <li class="mobile-contacts__item">
+                  <a class="mobile-contacts__phone" href="tel:+380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-contacts__item">
+                  <a
+                    class="mobile-contacts__email"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-socials">
+                <li class="mobile-socials__item">
+                  <a class="mobile-socials__link">Instagram</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a class="mobile-socials__link">Twitter</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a class="mobile-socials__link">Facebook</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a class="mobile-socials__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -98,11 +164,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/technohryak.jpg"
-                      alt="візитні картки працівників на екрані ноутбука"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/technohryak-desktop.jpg    1x,
+                          ./images/portfolio/technohryak-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/technohryak-tablet.jpg    1x,
+                          ./images/portfolio/technohryak-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/technohryak-mobile.jpg    1x,
+                          ./images/portfolio/technohryak-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/technohryak-desktop.jpg"
+                        alt="візитні картки працівників на екрані ноутбука"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -126,11 +215,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/neworlean.jpg"
-                      alt="два баскетболісти у двободї за м'яч"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/neworlean-desktop.jpg    1x,
+                          ./images/portfolio/neworlean-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/neworlean-tablet.jpg    1x,
+                          ./images/portfolio/neworlean-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/neworlean-mobile.jpg    1x,
+                          ./images/portfolio/neworlean-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/neworlean-desktop.jpg"
+                        alt="два баскетболісти у двобої за м'яч"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -156,11 +268,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/seafood.jpg"
-                      alt="Риба тунець розташована поза назвою ресторану сіфуд"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-desktop.jpg    1x,
+                          ./images/portfolio/seafood-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-tablet.jpg    1x,
+                          ./images/portfolio/seafood-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-mobile.jpg    1x,
+                          ./images/portfolio/seafood-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/seafood-desktop.jpg"
+                        alt="Риба тунець розташована поза назвою ресторану сіфуд"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -186,11 +321,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/prime.jpg"
-                      alt="бездротові навушники чорного кольору"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-desktop.jpg    1x,
+                          ./images/portfolio/prime-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-tablet.jpg    1x,
+                          ./images/portfolio/prime-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-mobile.jpg    1x,
+                          ./images/portfolio/prime-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/prime-desktop.jpg"
+                        alt="бездротові навушники чорного кольору"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -214,11 +372,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/boxes.jpg"
-                      alt="біла та коричнева коробки на білому фоні"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/boxes-desktop.jpg    1x,
+                          ./images/portfolio/boxes-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/boxes-tablet.jpg    1x,
+                          ./images/portfolio/boxes-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/boxes-mobile.jpg    1x,
+                          ./images/portfolio/boxes-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/boxes-desktop.jpg"
+                        alt="біла та коричнева коробки на білому фоні"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -242,11 +423,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/inspiration.jpg"
-                      alt="відображення сайту з мапою світу на моніторі mac"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-desktop.jpg    1x,
+                          ./images/portfolio/inspiration-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-tablet.jpg    1x,
+                          ./images/portfolio/inspiration-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-mobile.jpg    1x,
+                          ./images/portfolio/inspiration-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/inspiration-desktop.jpg"
+                        alt="відображення сайту з мапою світу на моніторі mac"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -272,11 +476,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/limited.jpg"
-                      alt="Відкрита книга лімітованої серії"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-desktop.jpg    1x,
+                          ./images/portfolio/limited-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-tablet.jpg    1x,
+                          ./images/portfolio/limited-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-mobile.jpg    1x,
+                          ./images/portfolio/limited-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/limited-desktop.jpg"
+                        alt="Відкрита книга лімітованої серії"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -300,11 +527,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/projectlab.jpg"
-                      alt="етикетка з текстом лаб, яка висить на плетеному шнурку"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/projectlab-desktop.jpg    1x,
+                          ./images/portfolio/projectlab-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/projectlab-tablet.jpg    1x,
+                          ./images/portfolio/projectlab-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/projectlab-mobile.jpg    1x,
+                          ./images/portfolio/projectlab-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/projectlab-desktop.jpg"
+                        alt="етикетка з текстом лаб, яка висить на плетеному шнурку"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -328,11 +578,34 @@
               >
                 <div class="portfolio__top-wrap">
                   <div class="portfolio__thumb">
-                    <img
-                      class="portfolio__img"
-                      src="./images/portfolio/grovingbusiness.jpg"
-                      alt="чоловік працює на ноутбуці на сайті гровінг бізнес"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/grovingbusiness-desktop.jpg    1x,
+                          ./images/portfolio/grovingbusiness-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/grovingbusiness-tablet.jpg    1x,
+                          ./images/portfolio/grovingbusiness-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/grovingbusiness-mobile.jpg    1x,
+                          ./images/portfolio/grovingbusiness-mobile-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="portfolio__img"
+                        src="./images/portfolio/grovingbusiness-desktop.jpg"
+                        alt="чоловік працює на ноутбуці на сайті гровінг бізнес"
+                      />
+                    </picture>
                   </div>
                   <p class="portfolio__top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -459,5 +732,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

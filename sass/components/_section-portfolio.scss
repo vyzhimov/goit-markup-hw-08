@@ -1,13 +1,33 @@
 .section-portfolio {
-  padding-top: $section-padding;
-  padding-bottom: $section-padding;
+  padding-top: $mobile-section-padding;
+  padding-bottom: $mobile-section-padding;
+
+  @include desktop {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
 }
 
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  row-gap: 14px;
+  column-gap: 8px;
+
+  @media screen and (max-width: 767px) {
+    width: 326px;
+  }
+
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 8px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__btn {
@@ -20,7 +40,8 @@
   letter-spacing: 0.03em;
   cursor: pointer;
   background: $background-icon-color;
-  border-color: transparent;
+  border: none;
+  min-width: 73px;
   border-radius: 4px;
   transition: color $transition-duration $transition-duration,
     background-color $transition-duration $transition-duration,
@@ -43,11 +64,17 @@
 }
 
 .portfolio__sublist-item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-thumb {
-  width: 370px;
+  width: 100%;
 }
 
 .portfolio__img {

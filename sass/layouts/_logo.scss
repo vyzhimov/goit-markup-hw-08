@@ -16,7 +16,10 @@
 }
 
 .page-header__logo {
-  margin-right: 93px;
+  margin-right: 87px;
+  @include desktop {
+    margin-right: 93px;
+  }
 }
 
 .page-footer__logo {

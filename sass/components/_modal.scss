@@ -28,6 +28,7 @@
   width: 100%;
   height: 100%;
   background-color: $background-backdrop-color;
+  overflow: auto;
   transition: opacity $transition-duration $transition-timing,
     visibility $transition-duration $transition-timing;
 }

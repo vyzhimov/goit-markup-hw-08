@@ -1,5 +1,6 @@
 .section-team {
-  padding: 60px 0;
+  padding-top: $mobile-section-padding;
+  padding-bottom: $mobile-section-padding;
   background-color: $background-team-color;
 
   @include desktop {

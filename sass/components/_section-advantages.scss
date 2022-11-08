@@ -1,5 +1,6 @@
 .section-advantages {
-  padding: 60px 0;
+  padding-top: $mobile-section-padding;
+  padding-bottom: $mobile-section-padding;
 
   @include desktop {
     padding-top: $section-padding;

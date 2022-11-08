@@ -20,7 +20,11 @@
 }
 
 .btn--large {
-  min-width: 216px;
+  padding: 10px 24px;
+  @include desktop {
+    padding: 10px 28px;
+    min-width: 216px;
+  }
 }
 
 .form-subscribe__btn {
